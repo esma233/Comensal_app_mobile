@@ -1,6 +1,6 @@
 package com.caanvi.comensal_app_mobile.Login.Storage
 
-public object UserData {
+object usuarioData {
     lateinit var idGeneral : String
     lateinit var emailGeneral : String
 }

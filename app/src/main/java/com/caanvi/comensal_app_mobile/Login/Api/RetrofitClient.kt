@@ -9,7 +9,12 @@ object RetrofitClient {
 
     private val AUTH = "Basic "+ Base64.encodeToString("belalkhan:123456".toByteArray(), Base64.NO_WRAP)
 
-    private const val BASE_URL = "http://192.168.0.113/bdComensal/"
+    //Local
+    //private const val BASE_URL = "http://192.168.0.113/bdComensal/"
+
+    //Server
+    private const val BASE_URL = " http://login.encountergps.com/"
+
 
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor { chain ->
