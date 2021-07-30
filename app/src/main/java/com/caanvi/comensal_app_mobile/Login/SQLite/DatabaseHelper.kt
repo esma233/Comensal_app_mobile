@@ -56,13 +56,12 @@ class DatabaseHelper (context: Context):SQLiteOpenHelper(context, dbname, factor
         }
     }
 
-    fun insertDB (id:String, email:String, password:String){
+    fun insertDB (id:String, email:String){
         val db : SQLiteDatabase = writableDatabase
         val values: ContentValues = ContentValues()
 
         values.put("id", id)
         values.put("email", email)
-        values.put("password", password)
 
         db.insert("user", null, values)
         db.close()
